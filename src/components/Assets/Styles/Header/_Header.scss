@@ -1,0 +1,40 @@
+.header{
+    height: 637px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url('../../Image/Header/fon.png');
+    background-size: 100% 117%;
+    background-repeat: no-repeat;
+    .header-span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        margin: 0px 0px 20px 0px;
+    }
+}
+
+
+@media (max-width: 1200px){
+    .header{
+        height: 470px;
+    }
+}
+@media (max-width: 960px){
+    .header{
+        background-position: center;
+        background-size: cover;
+    }
+}
+@media (max-width: 640px){
+    .header{
+        height: 647px;
+        background: url('../../Image/Header/small-fon.png');
+        background-position: center;
+        background-size: cover;
+    }
+}

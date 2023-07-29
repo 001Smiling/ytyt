@@ -1,0 +1,52 @@
+.header-menu__name-user{
+    display: flex;
+}
+.header-menu__button-out {
+    display: none;
+  }
+  .header-menu__name-user{
+    &:hover{
+      .header-menu__button-out {
+        display: block;
+        margin-left: 10px;
+        padding: 5px 10px;
+        background-color: $secondcolor;
+        color: white;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+  .menu-content__btn-logout{
+    width: 41.7vw;
+    height: 49px;
+    margin: 0 0 34px 0;
+    background-color: $secondcolor;
+    @include adaptiv-font(30,15);
+    &:hover{
+      animation: pulse 2s infinite;
+        @keyframes pulse {
+          0% {
+            -moz-box-shadow: 0 0 0 0 #8d2c0e;
+            box-shadow: 0 0 0 0 #8d2c0e;
+          }
+          70% {
+              -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+              box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+          }
+          100% {
+              -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+              box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+          }
+        }
+  }
+  }
+  @media (max-width: 640px){
+    .header-menu__name-user{
+        &:hover{
+          .header-menu__button-block{
+            display: none;
+          }
+        }
+      }
+}

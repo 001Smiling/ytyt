@@ -1,0 +1,112 @@
+$maxWidth: 1400;
+@mixin adaptiv-font($pcSize, $mobSize){
+    $addSize: $pcSize - $mobSize;
+    $maxWidth:$maxWidth - 320;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+.main-helpandstudy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 813px;
+    background-color: white;
+    border-radius: 80px;
+    color: $maincolor;
+}
+
+.helpandstudy-point {
+    height: 313px;
+    margin: 0px 0px 30px 0px;
+    &:last-child{
+        margin: 0;
+    }
+}
+
+.helpandstudy-point__imgblok{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31vw;
+    background-color: rgba(234, 242, 245, 1);
+    border-radius: 40px;
+    margin: 0px 30px 0px 0px;
+    &:last-child{
+        margin: 0px 0px 0px 30px;
+    }
+}
+
+.helpandstudy-point__textblok{
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(234, 242, 245, 1);
+    border-radius: 40px;
+}
+.helpandstudy-point__title{
+    width: 75%;
+    font-weight: 600;
+    @include adaptiv-font(32,20);
+    text-align: start;
+}
+.helpandstudy-point__text{
+    width: 75%;
+    @include adaptiv-font(16,12);
+    line-height: 156%;
+    margin: 18px 0 0 0;
+}
+
+.helpandstudy-point__textspan{
+    display: block;
+    padding: 15px 0px 0px 0px;
+}
+
+@media (max-width: 640px) {
+    .main-helpandstudy{
+        height: 1060px;
+        border-radius: 30px;
+    }
+    .helpandstudy-point {
+        flex-direction: column;
+        height: 540px;
+        margin: 0px 0px 11px 0px;
+        align-items: center;
+        &:last-child{
+            height: 487px;
+            flex-direction: column-reverse;
+        }
+    }
+    .helpandstudy-point__imgblok,
+    .helpandstudy-point__textblok{
+        width: 100%;
+    }
+    .helpandstudy-point__imgblok{
+        height: 243px;
+        border-radius: 30px;
+        margin: 0px 0px 12px 0px;
+        .helpandstudy-point__img{
+            width: 205px;
+        }
+        &:last-child{
+            margin: 0px 0px 12px 0px;
+        }
+    }
+    .helpandstudy-point__textblok{
+        &:first-child{
+            height: 232px;
+        }
+        &:last-child{
+            height: 285px;
+        }
+    }
+}
+
+// @media (max-width: 480px){
+//     .helpandstudy-point__imgblok{
+//         .helpandstudy-point__img{
+//             width: 72.89%;
+//         }
+//     }
+// }

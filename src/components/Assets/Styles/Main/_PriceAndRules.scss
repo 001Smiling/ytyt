@@ -1,0 +1,416 @@
+$maxWidth: 1400;
+@mixin adaptiv-font($pcSize, $mobSize){
+    $addSize: $pcSize - $mobSize;
+    $maxWidth:$maxWidth - 320;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+.main-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $maincolor;
+}
+
+.main-price__title{
+    font-weight: 600;
+    @include adaptiv-font(46,22);  
+    padding: 90px 0px 0px 0px;
+}
+.main-price__container{
+    flex-direction: column;
+}
+.main-price__points{
+    width: 100%;
+    height: 139px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-price__point1,
+.main-price__point2,
+.main-price__point3{
+display: flex;
+justify-content: space-between;
+}
+
+.main-price__point1{
+    width: 33.57%;
+    img{
+        width: 61px;
+        height: 61px;
+    }
+    .main-price__text{
+        width: 76.9%;
+    }
+}
+
+.main-price__point2{
+    width: 21.26%;
+    img{
+        width: 59px;
+        height: 59px;
+    }
+    .main-price__text{
+        width: 63.96%;
+    }
+}
+
+.main-price__point3{
+    width: 33.15%;
+    img{
+        width: 48.38px;
+        height: 55.74px;
+    }
+    .main-price__text{
+        width: 78.2%;
+    }
+}
+
+.main-price__text{
+    @include adaptiv-font(16,12);
+    line-height: 131%;
+}
+
+.price-phone{
+    display: none;
+}
+
+.mainprice-table{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    padding: 21px 40px 17px 39px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+.mainprice-table__header-footer,
+.mainprice-table__row {
+    height: 57px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.mainprice-table__row {
+    @include adaptiv-font(20,13);
+    &:nth-child(odd){
+        background: #F3F3F3;
+    }
+}
+
+.mainprice-res{
+    @include adaptiv-font(24,19);
+    font-weight: 700;
+}
+.mainprice-table__header{
+    font-size: 16px;
+    color: rgba(56, 191, 242, 1);
+}
+.mainprice-table__data,
+.mainprice-table__rowblok {
+    display: flex;
+    align-items: center;
+    padding-left: 19px;
+    width: 26%;
+    text-align: start;
+    &:first-child{
+        width: 46%;
+    }
+}
+
+.mainprice-table__iftime{
+    font-size: 16px;
+    color: rgba(142, 142, 142, 1);
+    margin: 25px 0px 33px 58px;
+}
+
+.mainprice-rules,
+.mainprice-rules__points{
+    display: flex;
+    align-items: center;
+}
+
+.mainprice-rules__points{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.mainprice-rules{
+    height: 218px;
+    background: #EAF2F5;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.mainprice-rules__icon{
+    margin: 0px 0px 0px 54px;
+}
+
+.mainprice-rules__text{
+    width: 51%;
+    @include adaptiv-font(17,12);
+    line-height: 129%;
+}
+
+.mainprice-rules__btn{
+    font-size: 20px;
+    width: 26%;
+    margin: 0px 51px 0px 0px;
+    &:hover{
+        animation: pulse 2s infinite;
+          @keyframes pulse {
+            0% {
+              -moz-box-shadow: 0 0 0 0 $thirdcolor;
+              box-shadow: 0 0 0 0 $thirdcolor;
+            }
+            70% {
+                -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+                box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+            }
+            100% {
+                -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+                box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+            }
+          }
+    }
+}
+@media (min-width: 960px) and (max-width: 1200px){
+    .main-price__point1{
+        min-width: 300px;
+        .main-price__text{
+            width: 70%;
+        }
+        img{
+            width: 70px;
+            height: 70px;
+        }
+    }
+    
+    .main-price__point2{
+        min-width: 210px;
+        img{
+            width: 65px;
+            height: 65px;
+        }
+    }
+    .main-price__point3{
+        min-width: 270px;
+        .main-price__text{
+            width: 75%;
+        }
+        img{
+            width: 55px;
+            height: 70px;
+        }
+    }
+    .mainprice-rules__icon{
+        margin: 0px 0px 0px 44px;
+    }
+    .mainprice-rules__text{
+        width: 45%;
+    }
+    .mainprice-rules__btn{
+        margin: 0px 41px 0px 0px;
+    }
+}
+
+@media (max-width: 960px){
+    .mainprice-rules{
+        height: 283px;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .mainprice-rules__points{
+        width: 96%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .mainprice-rules__icon{
+        margin: 0;
+    }
+    .mainprice-rules__text{
+        width: 75%;
+    }
+    .mainprice-rules__btn{
+        width: 257px;
+        height: 60px;
+        margin: 17px 0 0 0;
+    }
+}
+@media (min-width: 640px) and (max-width: 960px) {
+    .main-price__points{
+        height: 228px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .main-price__point1,
+    .main-price__point2,
+    .main-price__point3{
+    justify-content: space-around;
+    }
+    .main-price__point1{
+        min-width: 354px; 
+        .main-price__text{
+            width: 70%;
+        }
+    }
+    
+    .main-price__point2{
+        min-width: 240px;
+        .main-price__text{
+            width: 60%;
+        }
+    }
+    .main-price__point3{
+        min-width: 295px;
+    }
+}
+@media (max-width: 640px) {
+    .main-price__title{
+        padding: 60px 0 0 0;
+    }
+    .main-price__points{
+        width: 100%;
+        height: 415px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 25px 0 0 0;
+    }
+    .pricepoint{
+        width: 77%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .main-price__point1{
+        img{
+            width: 61px;
+            height: 61px;
+        }
+        .main-price__text{
+            padding: 12px 0 0 0;
+        }
+    }
+    .main-price__point1,
+    .main-price__point3{
+        .main-price__text{
+            width: 82%;
+        }
+    }
+    .main-price__point2{
+        margin: 21px 0 38px 0;
+        img{
+            width: 65px;
+            height: 65px;
+        }
+        .main-price__text{
+            width: 56%;
+            padding: 10px 0 0 0;
+        }
+    }
+    .main-price__point3{
+        img{
+            width: 58.38px;
+            height: 65.74px;
+        }
+        .main-price__text{
+            padding: 8.26px 0 0 0;
+        }
+    }
+    .mainprice-table{
+        margin-top: 50px;
+        padding: 21px 21px 17px 20px;
+    }
+    .mainprice-table__data,
+    .mainprice-table__rowblok {
+        width: 29%;
+        &:first-child{
+            width: 39%;
+        }
+        &:last-child{
+            width: 35%;
+        }
+    }
+    .mainprice-table__header-footer,
+    .mainprice-table__row {
+    height: 70px;
+    }
+    .mainprice-table__iftime{
+        margin-left: 23px;
+    }
+}
+@media (min-width: 480px) and (max-width: 640px) {
+    .mainprice-table{
+        margin-top: 50px;
+    } 
+}
+
+@media (max-width: 480px) {
+    .main-price__points{
+        height: 355px;
+    }
+    .pricepoint{
+        width: 100%;
+    }
+    .main-price__point1{
+        img{
+            width: 51px;
+            height: 51px;
+        }
+    }
+    .main-price__point2{
+        img{
+            width: 55px;
+            height: 55px;
+        }
+    }
+    .main-price__point3{
+        img{
+            width: 48.38px;
+            height: 55.74px;
+            }
+    }
+    .price-phone{
+        display: flex;
+        align-items: center;
+        padding-top: 22px;
+    }
+    .price-phone__arrow{
+        color: #C4C4C4;
+        padding-left: 6px;
+    }
+    .mainprice-table{
+        width: 103%;
+        padding: 20px 0px 17px 20px;
+        border-radius: 30px 0px 0px 30px;
+    }
+    .mainprice-table__data,
+    .mainprice-table__rowblok{
+        &:first-child{
+            width: 100%;
+        }
+        &:nth-child(n+2){
+            display: none;
+        }
+    }
+    .mainprice-table__row {
+        border-radius: 10px 0px 0px 10px;
+    }
+    .mainprice-rules{
+        height: 415px;
+    }
+    .mainprice-rules__text{
+        width: 83.7%;
+        text-align: center;
+        margin: 21px 0 0 0;
+    }
+}
+
+
+
+
