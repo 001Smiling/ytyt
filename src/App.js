@@ -1,12 +1,16 @@
 import './App.css';
 import './components/Assets/Styles/base.scss'
-
+import MainPage from './components/MainPage/MainPage';
+import UserPage from './components/UserPage/UserPage';
+import {Routes, Route} from "react-router-dom"
 
 function App() {
   return (
     <>
-                <div className="header-about__text-slogan"><span className="header-about__text-name">Школа <span className="header-about__text-y">Y</span>t<span className="header-about__text-y2">Y</span>t</span> для тех, кому нужны реальные навыки,
-                    а не просто сертификат</div>
+      <Routes>
+      <Route extra path='/user' element={<UserPage />} />
+      <Route extra path='/' element={<MainPage />} />
+      </Routes>
     </>
   );
 }
