@@ -1,10 +1,12 @@
 {
   "files": {
     "main.css": "/ytyt/static/css/main.d7153b56.css",
-    "main.js": "/ytyt/static/js/main.3918e900.js",
+    "main.js": "/ytyt/static/js/main.3b462bfe.js",
+    "static/media/process.mp4": "/ytyt/static/media/process.7596e0d891ed0eb92188.mp4",
     "static/media/small-fon.png": "/ytyt/static/media/small-fon.d3738bdc3a6740d96b9f.png",
     "static/media/fon.png": "/ytyt/static/media/fon.2aaa40423f6c5ec07871.png",
     "static/media/small-fon_how_study.png": "/ytyt/static/media/small-fon_how_study.0adff369fdd8be073910.png",
+    "static/media/video.PNG": "/ytyt/static/media/video.5a1e76ccedff64afe3f4.PNG",
     "static/media/Poppins-Regular.woff": "/ytyt/static/media/Poppins-Regular.387f9003f984ef1cec60.woff",
     "static/media/Poppins-SemiBold.woff": "/ytyt/static/media/Poppins-SemiBold.71da8e4f0d76b718897c.woff",
     "static/media/Poppins-Bold.woff": "/ytyt/static/media/Poppins-Bold.a6b628bdef91e927b77c.woff",
@@ -12,12 +14,16 @@
     "static/media/Poppins-SemiBold.woff2": "/ytyt/static/media/Poppins-SemiBold.3c3f3613b59d581739fc.woff2",
     "static/media/Poppins-Bold.woff2": "/ytyt/static/media/Poppins-Bold.dd24d10e037690f2bdcd.woff2",
     "static/media/fon_how_study.png": "/ytyt/static/media/fon_how_study.1e5e5f57804b249d1f51.png",
+    "static/media/programma.png": "/ytyt/static/media/programma.e77f75a6f690464ae53d.png",
+    "static/media/help.png": "/ytyt/static/media/help.a46cfc578a017316476e.png",
+    "static/media/method.png": "/ytyt/static/media/method.9849ddaa188dfd4d1c81.png",
+    "static/media/smile.png": "/ytyt/static/media/smile.0461d51d3bfa399b1a68.png",
     "index.html": "/ytyt/index.html",
     "main.d7153b56.css.map": "/ytyt/static/css/main.d7153b56.css.map",
-    "main.3918e900.js.map": "/ytyt/static/js/main.3918e900.js.map"
+    "main.3b462bfe.js.map": "/ytyt/static/js/main.3b462bfe.js.map"
   },
   "entrypoints": [
     "static/css/main.d7153b56.css",
-    "static/js/main.3918e900.js"
+    "static/js/main.3b462bfe.js"
   ]
 }
