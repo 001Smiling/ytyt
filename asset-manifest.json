@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/ItSchool-YtYT/static/css/main.e8d36601.css",
+    "main.js": "/ItSchool-YtYT/static/js/main.b1af55b6.js",
+    "static/media/process.mp4": "/ItSchool-YtYT/static/media/process.7596e0d891ed0eb92188.mp4",
+    "static/media/small-fon.png": "/ItSchool-YtYT/static/media/small-fon.d3738bdc3a6740d96b9f.png",
+    "static/media/fon.png": "/ItSchool-YtYT/static/media/fon.2aaa40423f6c5ec07871.png",
+    "static/media/small-fon_how_study.png": "/ItSchool-YtYT/static/media/small-fon_how_study.0adff369fdd8be073910.png",
+    "static/media/video.PNG": "/ItSchool-YtYT/static/media/video.5a1e76ccedff64afe3f4.PNG",
+    "static/media/Poppins-Regular.woff": "/ItSchool-YtYT/static/media/Poppins-Regular.387f9003f984ef1cec60.woff",
+    "static/media/Poppins-SemiBold.woff": "/ItSchool-YtYT/static/media/Poppins-SemiBold.71da8e4f0d76b718897c.woff",
+    "static/media/Poppins-Bold.woff": "/ItSchool-YtYT/static/media/Poppins-Bold.a6b628bdef91e927b77c.woff",
+    "static/media/Poppins-Regular.woff2": "/ItSchool-YtYT/static/media/Poppins-Regular.ad19729d6a0511212493.woff2",
+    "static/media/Poppins-SemiBold.woff2": "/ItSchool-YtYT/static/media/Poppins-SemiBold.3c3f3613b59d581739fc.woff2",
+    "static/media/Poppins-Bold.woff2": "/ItSchool-YtYT/static/media/Poppins-Bold.dd24d10e037690f2bdcd.woff2",
+    "static/media/fon_how_study.png": "/ItSchool-YtYT/static/media/fon_how_study.1e5e5f57804b249d1f51.png",
+    "static/media/programma.png": "/ItSchool-YtYT/static/media/programma.e77f75a6f690464ae53d.png",
+    "static/media/help.png": "/ItSchool-YtYT/static/media/help.a46cfc578a017316476e.png",
+    "static/media/method.png": "/ItSchool-YtYT/static/media/method.9849ddaa188dfd4d1c81.png",
+    "static/media/smile.png": "/ItSchool-YtYT/static/media/smile.0461d51d3bfa399b1a68.png",
+    "index.html": "/ItSchool-YtYT/index.html",
+    "main.e8d36601.css.map": "/ItSchool-YtYT/static/css/main.e8d36601.css.map",
+    "main.b1af55b6.js.map": "/ItSchool-YtYT/static/js/main.b1af55b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8d36601.css",
+    "static/js/main.b1af55b6.js"
+  ]
+}
